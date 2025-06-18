@@ -1,0 +1,17 @@
+def search_by_identifier(identifier):
+    search_url = f"https://launch.smarthealthit.org/v/r4/fhir/Patient?identifier={identifier}"
+    print(search_url)
+    response = requests.get(search_url, headers={"Accept": "application/fhir+json"})
+
+    if response.status_code == 200:
+        patients = response.json()
+        print(patients)
+        if patients:
+            print("Paciente encontrado:")
+            for patient in patients:
+                print(patient)
+        else:
+            print("No se encontró ningún paciente con ese identificador.")
+    else:
+        print(f"Error al buscar paciente por identificador: {response.status_code}")
+        print(response.json())
