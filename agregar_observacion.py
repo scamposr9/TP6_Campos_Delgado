@@ -25,7 +25,7 @@ def crear_observacion(patient_id):
             "reference": f"Patient/{patient_id}"
         },
         "encounter": {
-            "reference": "Encounter/123456"
+            "reference": "Encounter/example"
         },
         "effectiveDateTime": "2025-06-18T12:00:00+00:00",
         "valueQuantity": {
