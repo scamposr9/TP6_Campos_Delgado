@@ -15,6 +15,3 @@ def obtener_observaciones(patient_id):
             print(f"Tipo: {tipo}, Valor: {valor} {unidad}, Interpretación: {interpretacion}")
     else:
         print("Error al obtener las observaciones")
-
-# Ejemplo de uso:
-# obtener_observaciones("123456")
