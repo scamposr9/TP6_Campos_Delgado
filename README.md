@@ -38,3 +38,20 @@ Este archivo crea un recurso **Patient** con los siguientes parámetros:
 - **identifier**: Identificador único del paciente (SSN).
 
 Una vez creado el paciente, se envía al servidor FHIR y se obtiene el ID del paciente. 
+
+### `workflow_observation.py` - Crea una observación clínica al paciente
+
+Este archivo crea un recurso **observation** y lo asocia a un paciente. Los parámetros incluyen:
+
+- **patient_id**: ID del paciente.
+- **medication_code**: Código del medicamento causante de la alergia.
+- **reaction_code**: Código SNOMED CT de la reacción (por ejemplo, **Hives**).
+- **date_recorded**: Fecha de registro de la alergia.
+- **clinical_status**: Estado clínico de la alergia (activo/inactivo).
+- **verification_status**: Estado de verificación (confirmado/no confirmado).
+- **criticality**: Gravedad de la alergia (alta/baja).
+
+Una vez creado el recurso **AllergyIntolerance**, se envía al servidor FHIR y se obtiene el ID de la alergia.
+
+---
+
