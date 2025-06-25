@@ -2,7 +2,7 @@ from observation import create_observation_resource
 from base import send_resource_to_hapi_fhir
 
 # Substitua com o ID real do paciente criado
-patient_id = "48031329"
+patient_id = "id_paciente"
 
 observation = create_observation_resource(
     patient_id=patient_id,
