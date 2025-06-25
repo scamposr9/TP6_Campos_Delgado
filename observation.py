@@ -5,7 +5,6 @@ from fhir.resources.coding import Coding
 from fhir.resources.reference import Reference
 from fhir.resources.quantity import Quantity
 
-
 def create_observation_resource(
     patient_id: str,
     observation_code: str,
