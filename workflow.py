@@ -3,7 +3,7 @@ from base import send_resource_to_hapi_fhir, get_resource_from_hapi_fhir, search
 
 if __name__ == "__main__":
     # Parámetros del paciente (se puede dejar algunos vacíos)
-    id_provisional = "builder"
+    id_provisional = "PAT-71616841"
     family_name = "Castro"
     given_name = "Pedro"
     birth_date = "2003-06-11"
