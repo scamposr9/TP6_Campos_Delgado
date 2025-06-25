@@ -18,7 +18,7 @@ def create_observation_resource(
     category_code: Optional[str] = "vital-signs",
     category_display: Optional[str] = "Signos Vitales",
     effective_datetime: Optional[str] = None,
-    encounter_id: Optional[str] = None  # Novo: permite vincular a um Encounter
+    encounter_id: Optional[str] = None  # Permite vincular a um Encounter
 ) -> Observation:
      # Criar a categoria da observação (ex: sinais vitais, laboratório)
     category = CodeableConcept(
